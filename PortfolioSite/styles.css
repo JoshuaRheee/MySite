@@ -1,0 +1,112 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #100e17;
+    color: white;
+}
+
+.split-container {
+    display: flex;
+}
+
+#left-side {
+    height: 100vh;
+    width: 60vw;
+    align-items: center;
+    padding-left: 5vw;
+}
+
+#right-side {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item {
+    color: white;
+    font-size: clamp(1.5rem, 4vw, 4rem);
+    font-family: "Ibarra Real Nova", serif;
+
+    display: block;
+    text-decoration: none;
+    padding: clamp(1rem, 2vw, 4rem) 0rem;
+}
+
+#menu-items {
+    margin-left: clamp(1rem, 5vw, 12rem);
+    text-align: center;
+}
+
+#menu-items:hover > .menu-item {
+    opacity: 0.3;
+    transition-duration: 500ms;
+}
+
+#menu-items:hover > .menu-item:hover {
+    opacity: 1;
+    transition-duration: 500ms;
+}
+
+#About, #Experience, #Projects, #Contact {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#menu-background-pattern {
+    height: 100vh;
+    width: 100vw;
+
+    background-image: radial-gradient(rgba(255,255,255,0.1)9%,transparent 9%);
+    background-position: 0% 0%;
+    background-size: 12vmin 12vmin;
+}
+
+.header {
+    font-size: 4rem;
+}
+
+.sub-header {
+    font-size: 2rem;
+}
+
+.content {
+    color: rgb(165, 165, 165);
+}
+
+.card {
+    background-color: #17141d;
+    box-shadow: -1rem 0 3rem #000;
+    border-radius: 10px;
+    width: 40vw;
+    padding: 0.5rem;
+}
+
+.card a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#About {
+    display: block;
+    padding-top: 30vh;
+}
+
+#Experience {
+    display: block;
+    padding-top: 30vh;
+    text-decoration: none;
+}
+
+#Projects {
+    display: block;
+    padding-top: 30vh;
+}
+
+#Contact {
+    display: block;
+    padding-top: 5vh;
+}
