@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@netlify/functions": "^2.4.1",
     "@sendgrid/mail": "^8.1.0",
     "dotenv": "^16.3.1"
   }
