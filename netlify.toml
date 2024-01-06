@@ -1,0 +1,8 @@
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+  # Commented out or removed for a simple PHP email form
+
+[build]
+  publish = "/"
