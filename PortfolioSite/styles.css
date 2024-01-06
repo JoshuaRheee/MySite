@@ -135,7 +135,7 @@ body {
         rgba(117, 154, 255, 0.164)
       ) 1 1 60%;;
     border-radius: 0px;
-    translate: -10rem -25rem;
+    translate: -10rem -20rem;
     pointer-events: none;
 }
 
@@ -437,4 +437,48 @@ body {
 
 #sigStats img {
     max-width: 40vw;
+}
+
+.two img[src = "Images/Hiossen/lab.png"] {
+    width: 20vw;
+    height: auto;
+}
+
+#contactform {
+    height: 40vh;
+    input {
+        margin-bottom: 2rem;
+        width: 20vw;
+        outline: none;
+        border: none;
+        letter-spacing: 2px;
+        font-size: .8rem;
+        padding-left: 0.8vw;
+        height: 3rem;
+        border-radius: 0;
+        background-color: #130f1d;
+        color: antiquewhite;
+    }
+    textarea {
+        margin-bottom: 1rem;
+        width: 35vw;
+        height: 20vh;
+        outline: none;
+        border: none;
+        letter-spacing: 2px;
+        font-size: .8rem;
+        padding-left: 0.8vw;
+        padding-top: 0.8vh;
+        border-radius: 0;
+        background-color: #130f1d;
+        color: antiquewhite;
+        margin-bottom: 2rem;
+    }
+    .btn {
+        width: 35vw;
+        height: 50px;
+        background-color: #130f1d;
+        color: rgba(250, 235, 215, 0.932);
+        border: none;
+    }
 }

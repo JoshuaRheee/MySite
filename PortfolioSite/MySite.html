@@ -22,56 +22,12 @@
                     Developer and Designer
                 </div>
                 <div class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+                    Third Year C.S. Student @ Temple University
                 </div>
                 <div class="thinbox"></div>
             </div>
             
-            <!-- Experience -->
-            <div id="Experience">
-                <div class="header">
-                    Work Experience
-                </div>
-                <div class = "card">
-                    <a href = "Experience1.html">
-                        <div class="sub-header">
-                            Digital Data Integration Intern
-                        </div>
-                        <div class="content">
-                            Hiossen Dental Implants
-                        </div>
-                        <div class="ExperienceImageContainer">
-                            <div id = "HiossenLogo" class="images">
-                                <img src="Images/Hiossen/Hiossen-New-Logo.png" alt="HiossenLogo">
-                            </div>
-                            <div id = "HiossenExtra" class="images">
-                                <img src="Images/Hiossen/lab.png" alt="">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href = "Experience2.html">
-                        <div class="sub-header">
-                            Technician and Networking Assistant
-                        </div>
-                        <div class="content">
-                            Bucks County Presbyterian Church
-                        </div>
-                        <div class="ExperienceImageContainer">
-                            <div id = "bcpcoffice" class="images">
-                                <img src="Images/BCPC/office.jpg" alt="Office">
-                            </div>
-                            <div id = "bcpclogo" class="images">
-                                <img src="Images/BCPC/BCPC.webp" alt="">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            
-            
-    
+
             <!-- Projects -->
             <div id="Projects">
                 <div class="header">
@@ -129,26 +85,72 @@
                     </a>
                 </div>
             </div>
-            
+
+            <!-- Experience -->
+            <div id="Experience">
+                <div class="header">
+                    Work Experience
+                </div>
+                <div class = "card">
+                    <a href = "Experience1.html">
+                        <div class="sub-header">
+                            Digital Data Integration Intern
+                        </div>
+                        <div class="content">
+                            Hiossen Dental Implants
+                        </div>
+                        <div class="ExperienceImageContainer">
+                            <div id = "HiossenLogo" class="images">
+                                <img src="Images/Hiossen/Hiossen-New-Logo.png" alt="HiossenLogo">
+                            </div>
+                            <div id = "HiossenExtra" class="images">
+                                <img src="Images/Hiossen/lab.png" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href = "Experience2.html">
+                        <div class="sub-header">
+                            Technician and Networking Assistant
+                        </div>
+                        <div class="content">
+                            Bucks County Presbyterian Church
+                        </div>
+                        <div class="ExperienceImageContainer">
+                            <div id = "bcpcoffice" class="images">
+                                <img src="Images/BCPC/office.jpg" alt="Office">
+                            </div>
+                            <div id = "bcpclogo" class="images">
+                                <img src="Images/BCPC/BCPC.webp" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
     
             <!-- Contact -->
             <div id="Contact">
                 <div class="header">
-                    Email Me
+                    Contact Me
                 </div>
-                <div class="sub-header">
-                    
-                </div>
-                <div class="content">
-                    
-                </div>
+                <form method="post" action="contact.php" name="contactform" id="contactform">
+                    <input name="name" type="text" id="name" size="30" placeholder="Name">
+                    <br>
+                    <input name="email" type="text" id="email" size="30" placeholder="Email">
+                    <br>
+                    <input name="subject" type="text" id="subject" size="30" placeholder="Subject">
+                    <br>
+                    <textarea name="message" cols="40" rows="20" id="message" placeholder="Message"></textarea>
+                    <button type="submit" class="btn" id="submit" value="Submit">Send Message</button>
+                </form>
             </div>
         </div>
         <div id="right-side">
             <div id="menu-items">
                 <a href="#About" class = "menu-item">About</a>
-                <a href="#Experience" class = "menu-item">Experience</a>
                 <a href="#Projects" class = "menu-item">Projects</a>
+                <a href="#Experience" class = "menu-item">Experience</a>
                 <a href="#Contact" class = "menu-item">Contact</a>
             </div>
         </div>
