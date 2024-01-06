@@ -4,30 +4,61 @@ html {
 
 body {
     margin: 0;
-    background-color: #100e17;
-    color: white;
+    background-color: #09070e;
+    overflow-x: hidden;
 }
 
+/* Formatting */
 .split-container {
-    display: flex;
+    align-items: center;
 }
 
 #left-side {
-    height: 100vh;
-    width: 60vw;
+    width: 55vw;
     align-items: center;
-    padding-left: 5vw;
+    padding-left: 10vw;
+    float: left;
 }
 
 #right-side {
+    position: fixed;
+    right:10vw;
+    top:15%;
+}
+
+#About, #Experience, #Projects, #Contact {
     height: 100vh;
     display: flex;
     align-items: center;
 }
 
+#About {
+    display: block;
+    padding-top: 30vh;
+}
+
+#Experience {
+    display: block;
+    padding-top: 5vh;
+    text-decoration: none;
+    height: 150vh;
+}
+
+#Projects {
+    display: block;
+    padding-top: 5vh;
+    height: 200vh;
+}
+
+#Contact {
+    display: block;
+    padding-top: 5vh;
+}
+
+/* Menu */
 .menu-item {
-    color: white;
-    font-size: clamp(1.5rem, 4vw, 4rem);
+    color: #eff6e0;
+    font-size: clamp(3.5rem, 4vw, 4rem);
     font-family: "Ibarra Real Nova", serif;
 
     display: block;
@@ -50,39 +81,98 @@ body {
     transition-duration: 500ms;
 }
 
-#About, #Experience, #Projects, #Contact {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-}
-
 #menu-background-pattern {
-    height: 100vh;
+    height: 600vh;
     width: 100vw;
 
-    background-image: radial-gradient(rgba(255,255,255,0.1)9%,transparent 9%);
+    background-image: radial-gradient(rgba(52, 0, 173, 0.1)9%,transparent 9%);
     background-position: 0% 0%;
     background-size: 12vmin 12vmin;
 }
 
+#menu-background-image {
+    width: 100%;
+    height: 600vh;
+    background-image: url(Images/shapes.jpg);
+    pointer-events: none;
+
+    background-size: contain;
+    position: absolute;
+    left: 0px;
+    top: 0vh;
+    z-index: -1;
+
+    opacity: 0.04;
+}
+
+/* Text */
 .header {
     font-size: 4rem;
+    margin-bottom: 0.5rem;
+    color: #eff6e0;
 }
 
 .sub-header {
     font-size: 2rem;
+    color: #aec3b0;
 }
 
 .content {
-    color: rgb(165, 165, 165);
+    color: #9a9fa1;
+    font-size: 1.5rem;
+    padding-top: 1rem;
 }
 
+
+.thinbox {
+    position: absolute;
+    width: 70vw;
+    height: 50vh;
+    border: 3px solid;
+    border-image: linear-gradient(
+        to bottom right, 
+        rgba(0, 7, 99, 0.548), 
+        rgba(117, 154, 255, 0.164)
+      ) 1 1 60%;;
+    border-radius: 0px;
+    translate: -10rem -25rem;
+    pointer-events: none;
+}
+
+/* Cards */
 .card {
-    background-color: #17141d;
-    box-shadow: -1rem 0 3rem #000;
     border-radius: 10px;
+    border: 1px solid rgb(28, 0, 80);
+
     width: 40vw;
     padding: 0.5rem;
+    margin-bottom: 2rem;
+
+
+    transition: box-shadow 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+
+#Experience .card {
+    opacity: 0.9;
+}
+
+#Experience .card:hover {
+    box-shadow: 0rem 0 0.5rem rgba(0, 72, 131, 0.753);
+    transform: scale(1.01,1.01);
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+}
+
+#Projects .card {
+    opacity: 0.9;
+}
+
+#Projects .card:hover {
+    box-shadow: 0rem 0 0.5rem rgba(74, 121, 76, 0.753);
+    transform: scale(1.01,1.01);
+    opacity: 1;
+    transition: 0.3s ease-in-out;
 }
 
 .card a {
@@ -90,23 +180,261 @@ body {
     text-decoration: none;
 }
 
-#About {
-    display: block;
-    padding-top: 30vh;
+.cover {
+    position: absolute;
+    background-color: rgba(140, 247, 255, 0.3);
+    width: 40vw;
+    height: 7rem;
+    object-fit: cover;
+    translate: 0rem -7rem;
+    backdrop-filter: blur(10px);
 }
 
-#Experience {
-    display: block;
-    padding-top: 30vh;
-    text-decoration: none;
+#Experience .sub-header {
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    color: white;
 }
 
-#Projects {
-    display: block;
-    padding-top: 30vh;
+#Experience .content {
+    padding-left: 2rem;
+    padding-top: 0.1rem;
 }
 
-#Contact {
-    display: block;
-    padding-top: 5vh;
+.ExperienceImageContainer {
+    display: flex;
+}
+
+#bcpcoffice img {
+    width: 100%;
+    border-radius: 20px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    opacity: .8;
+}
+
+#bcpclogo img {
+    width: 62%;
+    border-radius: 20px;
+    margin-left: 6.5rem;
+    margin-top: 1rem;
+    opacity: .8;
+}
+
+#HiossenLogo img {
+    width: 100%;
+    margin-left: -1rem;
+}
+
+#HiossenExtra img {
+    width: 65%;
+    padding-left: 3rem;
+    padding-top: 1rem;
+}
+
+#Projects .card {
+    background-color: #000000;
+}
+
+#Projects .images > img {
+    position: relative;
+}
+
+#Projects .card .sub-header {
+    position: absolute;
+    translate: 1rem -6rem;
+    font-family: 'ArcadeClassic', sans-serif;
+    font-size: 2rem;
+    color: white;
+}
+
+#Projects .card .content {
+    position: absolute;
+    translate: 1rem -3rem;
+    font-family: 'ArcadeClassic', sans-serif;
+    color: white;
+}
+
+#Projects .card #winner {
+    color: yellow;
+}
+
+#Projects .images .static {
+    width: 40vw;
+    height: auto;
+}
+
+#Projects .images .active {
+    border-radius: 1px;
+    margin-top: -100vh;
+    z-index: -1;
+}
+
+#Projects .card:hover .images .static,
+#Projects .card:hover .cover,
+#Projects .card:hover .sub-header,
+#Projects .card:hover .content {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+#ArcTanksGifPosition img {
+    position: relative;
+    width: 40vw;
+    translate: 0vw -1.5vh;
+}
+
+#DayNightGifPosition img {
+    position: relative;
+    height: 22vw;
+    translate: 14vw;
+    margin-bottom: 2vh;
+}
+
+#XyrraissGifPosition img {
+    position: relative;
+    width: 40vw;
+}
+
+/* Projects */
+.projectimages {
+    margin-top: 2rem;
+    width: 60vw;
+    float: left;
+    flex-direction: column;
+    display: flex;
+    background-color: #0c091344;
+}
+
+.projectimages img {
+    padding-bottom: 2rem;
+    filter: brightness(.9);
+    max-width: 60vw;
+    pointer-events: none;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    max-width: 35vw;
+    right:1vw;
+    top: 5vh;
+}
+
+.description .game {
+    font-family: 'ArcadeClassic', sans-serif;
+}
+
+.back-button {
+    position: fixed;
+    z-index: 1;
+    left: 3rem;
+    top: 4rem;
+}
+
+.back-button:hover {
+    transform: scale(1.1,1.1);
+    transition: 0.5s ease-in-out;
+}
+
+.back-button img {
+    width: 3rem;
+}
+
+.Git {
+    position: absolute;
+    z-index: 1;
+    right: 2rem;
+    top: 5rem;
+}
+
+.Git:hover {
+    transform: scale(1.1,1.1);
+    transition: 0.5s ease-in-out;
+}
+
+.Git img {
+    width: 4rem;
+    filter: brightness(4);
+}
+
+.tech-stack {
+    color: #a5a5a5;
+    font-size: 1.5rem;
+}
+
+.Sections1 {
+    margin-bottom: 60vh;
+}
+
+.Sections2 {
+    margin-bottom: 84vh;
+}
+
+.Sections3 {
+    margin-bottom: 60vh;
+}
+
+#damageCalculations {
+    display: flex;
+    justify-content: space-between;
+}
+
+#damageCalculations img {
+    max-width: 29.9vw;
+    height: auto;
+}
+
+#stuffListed {
+    display: flex;
+    justify-content: space-between;
+}
+
+#stuffListed img[src="Images/Xyrraiss Dominion/Mobs.JPG"] {
+    width: 27.5vw;
+}
+
+.two {
+    display: flex;
+    justify-content: space-between;
+}
+.two img {
+    max-width: 29.9vw;
+    border-radius: 2px;
+}
+
+.three {
+    display: flex;
+    justify-content: space-between;
+}
+
+.three img {
+    width: 19.5vw;
+}
+
+.one {
+    display: flex;
+    justify-content: center;
+    background-color: #0707077c;
+    padding-bottom: 0px;
+}
+
+.space {
+    width: 30vw;
+    height: 2rem;
+}
+
+.tenvh {
+    height: 10vh;
+}
+
+.fiftyvh {
+    height: 50vh;
+}
+
+#sigStats img {
+    max-width: 40vw;
 }

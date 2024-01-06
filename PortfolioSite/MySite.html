@@ -6,6 +6,9 @@
     <title>My Site</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+    @import url('https://fonts.cdnfonts.com/css/arcade-classic');
+</style>
 <body>
     <div class="split-container">
         <div id="left-side">
@@ -15,15 +18,13 @@
                 <div class="header">
                     Joshua Rhee
                 </div>
-                <div class="card">
-                    <div class="sub-header">
-                        Developer/Designer
-                    </div>
-                    <div class="content">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
-                    </div>
+                <div class="sub-header">
+                    Developer and Designer
                 </div>
-                
+                <div class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+                </div>
+                <div class="thinbox"></div>
             </div>
             
             <!-- Experience -->
@@ -39,8 +40,13 @@
                         <div class="content">
                             Hiossen Dental Implants
                         </div>
-                        <div class="images">
-            
+                        <div class="ExperienceImageContainer">
+                            <div id = "HiossenLogo" class="images">
+                                <img src="Images/Hiossen/Hiossen-New-Logo.png" alt="HiossenLogo">
+                            </div>
+                            <div id = "HiossenExtra" class="images">
+                                <img src="Images/Hiossen/lab.png" alt="">
+                            </div>
                         </div>
                     </a>
                 </div>
@@ -52,8 +58,13 @@
                         <div class="content">
                             Bucks County Presbyterian Church
                         </div>
-                        <div class="images">
-                            
+                        <div class="ExperienceImageContainer">
+                            <div id = "bcpcoffice" class="images">
+                                <img src="Images/BCPC/office.jpg" alt="Office">
+                            </div>
+                            <div id = "bcpclogo" class="images">
+                                <img src="Images/BCPC/BCPC.webp" alt="">
+                            </div>
                         </div>
                     </a>
                 </div>
@@ -68,40 +79,52 @@
                 </div>
                 <div class="card">
                     <a href = "Project1.html">
-                        <div class="sub-header">
+                        <div class="images">
+                            <img class = "static" src="Images/ArcTanks/main.png" alt="ArcTanksMain">
+                            <div id="ArcTanksGifPosition">
+                                <img class = "active" src = "Images/ArcTanks/DemoVid.gif" alt="ArcTanksDemo">
+                            </div>
+                        </div>
+                        <div class="cover"></div>
+                        <div id = "Project1Sub" class="sub-header">
                             ArcTan(ks)
                         </div>
-                        <div class="content">
-                            OwlHacks Hackathon Winner
-                        </div>
-                        <div class="images">
-            
+                        <div id = "winner" class="content">
+                            Hackathon - Winner!
                         </div>
                     </a>
                 </div>
                 <div class="card">
                     <a href = "Project2.html">
+                        <div class="images">
+                            <img class = "static" src="Images/DayNight/DayNightMain.jpg" alt="DayNightMain">
+                            <div id = "DayNightGifPosition">
+                                <img class = "active" src="Images/DayNight/DayNight.gif" alt="DayNightDemo">
+                            </div>
+                        </div>
+                        <div class="cover"></div>
                         <div class="sub-header">
                             Day/Night Savings
                         </div>
                         <div class="content">
                             UX Design Prototype
                         </div>
-                        <div class="images">
-            
-                        </div>
                     </a>
                 </div>
                 <div class="card">
                     <a href = "Project3.html">
+                        <div class="images">
+                            <img class = "static" src="Images/Xyrraiss Dominion/XyrraissMain.jpg" alt="">
+                            <div id="XyrraissGifPosition">
+                                <img class = "active" src="Images/Xyrraiss Dominion/Demo.gif" alt="XyrraissDemo">
+                            </div>
+                        </div>
+                        <div class="cover"></div>
                         <div class="sub-header">
                             Xyrraiss Dominion
                         </div>
                         <div class="content">
-                            Roguelite RPG Video Game
-                        </div>
-                        <div class="images">
-            
+                            Roguelite - RPG - Video Game
                         </div>
                     </a>
                 </div>
@@ -130,7 +153,8 @@
             </div>
         </div>
     </div>
-    <div id="menu-background-pattern"></div>
+    <div id = "menu-background-pattern"></div>
+    <div id = "menu-background-image"></div>
     <script src="script.js"></script>
 </body>
 </html>
