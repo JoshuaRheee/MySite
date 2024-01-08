@@ -27,6 +27,10 @@ body {
     top:15%;
 }
 
+#home {
+    height: 600vh;
+}
+
 #About, #Experience, #Projects, #Contact {
     height: 100vh;
     display: flex;
@@ -80,7 +84,7 @@ body {
 }
 
 #menu-background-pattern {
-    height: 600vh;
+    height: 670vh;
     width: 100vw;
 
     position: absolute;
@@ -127,6 +131,9 @@ body {
     padding-top: 1rem;
 }
 
+#bcpcHeader {
+    font-size: 3.5rem;
+}
 
 .thinbox {
     position: absolute;
@@ -432,6 +439,9 @@ body {
     height: 2rem;
 }
 
+.fivevh {
+    height: 5vh;
+}
 .tenvh {
     height: 10vh;
 }
