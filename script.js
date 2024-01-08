@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
       var thresholds = {
         aboutButton: 0,
         projectsButton: 0.3,
-        experienceButton: 0.7,
+        experienceButton: 0.6,
         contactButton: 0.9
       };
 
