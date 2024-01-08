@@ -11,7 +11,7 @@ menuItems.addEventListener('mouseover', () => {
 // Move background out
 menuItems.addEventListener('mouseout', () => {
     backgroundPattern.style.backgroundSize = '12vmin 12vmin';
-    backgroundPattern.style.opacity = '0';
+    backgroundPattern.style.opacity = '0.5';
 });
 
 //Move pattern
