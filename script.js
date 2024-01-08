@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
         aboutButton: 0,
         projectsButton: 0.3,
         experienceButton: 0.6,
-        contactButton: 0.9
+        contactButton: 0.8
       };
 
       // Currently active button
