@@ -96,6 +96,7 @@ body {
     opacity: 0.5;
 
     transition: opacity, background-size, top, 800ms ease;
+
 }
 
 #menu-background-image {
@@ -496,4 +497,11 @@ body {
         color: rgba(250, 235, 215, 0.932);
         border: none;
     }
+}
+
+#linkedin img {
+    width: 3vw;
+    height: 3w;
+    translate: 0 -30vh;
+    opacity: .85;
 }
